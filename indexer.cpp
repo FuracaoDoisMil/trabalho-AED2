@@ -34,7 +34,7 @@ void Indexer::varrer_diretorio(const std::string& diretorio){
 
 void Indexer::indexar_arquivo(const std::string& diretorio){
     std::ifstream arquivo(diretorio);
-    //abre o arquivo de acordo com o diretorio
+    //abre o arquivo de acordo com o diretorio, em modo de leitura
 
     if (!arquivo.is_open())
     //verifica se o arquivo foi aberto com sucesso, se caso não foi:
@@ -61,4 +61,5 @@ void Indexer::indexar_arquivo(const std::string& diretorio){
         //adiciona palavra por palavra no indice + nome do arquivo
     }
     
+    arquivo.close();
 }

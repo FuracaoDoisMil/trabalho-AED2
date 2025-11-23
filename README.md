@@ -1,4 +1,4 @@
-# trabalho-AED2
+#trabalho-AED2
 1-Descrição do Projeto
 
 Este projeto implementa um sistema completo de indexação e busca textual, capaz de:

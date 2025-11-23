@@ -2,7 +2,7 @@
 #include <vector>
 #include "textprocessor.hpp"
 
-std::string converter_texto_letra_miniscula(const std::string& texto){
+std::string TextProcessor::converter_texto_letra_miniscula(const std::string& texto){
     std::string texto_minusculo;
     //variavel que vai receber o texto minusculo
     texto_minusculo.reserve(texto.size());
@@ -28,7 +28,7 @@ std::string converter_texto_letra_miniscula(const std::string& texto){
     return texto_minusculo;
 }
 
-std::string remover_pontuacao(const std::string& texto){
+std::string TextProcessor::remover_pontuacao(const std::string& texto){
     std::string remover;
     //variavel que vai receber o texto sem pontuação
 
@@ -48,7 +48,7 @@ std::string remover_pontuacao(const std::string& texto){
     return remover;
 }
 
-std::vector<std::string> quebrar_texto_para_lista(const std::string& texto){
+std::vector<std::string> TextProcessor::quebrar_texto_para_lista(const std::string& texto){
     std::vector<std::string> lista_palavras;
     //vetor que vai receber as palavras quebradas
     std::string palavra;
